@@ -17,4 +17,4 @@ if (value < begin) text = "The Berlin Wall is down";
 else if (value > end) text = "The Berlin Wall is down";
 else text = "The Berlin Wall is up";
 
-document.getElementById("message").innerHTML = text;
+//document.getElementById("message").innerHTML = text;
