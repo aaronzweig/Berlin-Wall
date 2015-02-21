@@ -18,7 +18,7 @@ else if (value > end) num = 2;
 else num = 1;
 
 var form = document.getElementById("language").children[0];
-var language = form.options[form.selectedIndex].value;
+var language = form.selectedIndex;
 
 var down = 
 ["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est tombé", "Берлинская стена упала"];
@@ -29,6 +29,5 @@ var up =
 var text;
 if (num == 0 || num == 2) text = down[language];
 else text = up[language];
-alert(text);
 document.getElementById("message").innerHTML = "<h1>" + text + "</h1>";
  
