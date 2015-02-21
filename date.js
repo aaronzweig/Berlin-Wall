@@ -18,8 +18,8 @@ if (value < begin) num = 0;
 else if (value > end) num = 2;
 else num = 1;
 
-$.get("http://www.npr.org/rss/rss.php?id=1008", function (data) {
-    $(data).find("item").each(function () { // or "item" or whatever suits your feed
+$.get("https://www.google.com/alerts/feeds/14587743128001146677/12048650407741769120", function (data) {
+    $(data).find("id").each(function () { // or "item" or whatever suits your feed
         var el = $(this);
 
         console.log("------------------------");
