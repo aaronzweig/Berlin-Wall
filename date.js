@@ -17,10 +17,15 @@ if (value < begin) num = 0;
 else if (value > end) text = num = 2;
 else text = num = 1;
 
+var language = 0;
+
 var down = 
 ["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est en baisse", "Берлинская стена упала"];
 
 var up =
 ["The Berlin Wall is Up", "Die Berliner Mauer steht noch", "La mur de Berlin est en place", "Берлинская стена ещё является"];
 
-//document.getElementById("message").innerHTML = <h1>text</h1>;
+var text;
+if (num == 0 || num == 2) text = down[language];
+else text = up[language];
+document.getElementById("message").innerHTML = <h1>text</h1>;
