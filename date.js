@@ -14,7 +14,7 @@ var end = evaluate(9, 11, 1989, base);
 
 var num;
 if (value < begin) num = 0;
-else if (value > end) text = num = 2;
+else if (value > end) num = 2;
 else num = 1;
 
 var language = 1;
@@ -28,4 +28,5 @@ var up =
 var text;
 if (num == 0 || num == 2) text = down[language];
 else text = up[language];
-document.getElementById("message").innerHTML = <h1>text</h1>;
+document.getElementById("message").innerHTML = "<h1>" + text + "</h1>";
+ 
