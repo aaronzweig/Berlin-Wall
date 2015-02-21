@@ -18,12 +18,14 @@
 
     <footer>
         <!--<span>Built by Jessie Alvarez, Jonathan Engel, and Aaron Zweig for TreeHacks 2015.</span>-->
-        <select>
-            <option value="english">English</option>
-            <option value="german">Deutsch</option>
-            <option value="french">Français</option>
-            <option value="russian">Русский</option>
-        </select>
+        <form>
+            <select onchange="this.form.submit()">
+                <option value="english">English</option>
+                <option value="german">Deutsch</option>
+                <option value="french">Français</option>
+                <option value="russian">Русский</option>
+            </select>
+        </form>
     </footer>
     <script src="date.js"></script>
 </body>
