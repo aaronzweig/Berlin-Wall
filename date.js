@@ -19,7 +19,7 @@ else if (value > end) num = 2;
 else num = 1;
 
 $.get("http://www.npr.org/rss/rss.php?id=1008", function (data) {
-    $(data).find("entry").each(function () { // or "item" or whatever suits your feed
+    $(data).find("item").each(function () { // or "item" or whatever suits your feed
         var el = $(this);
 
         console.log("------------------------");
