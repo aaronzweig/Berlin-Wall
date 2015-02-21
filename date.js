@@ -17,7 +17,7 @@ if (value < begin) num = 0;
 else if (value > end) num = 2;
 else num = 1;
 
-var form = document.getElementById("MySelectOption");
+var form = document.getElementById("language");
 var lang = form.options[form.selectedIndex].value;
 var language;
 switch(lang){
