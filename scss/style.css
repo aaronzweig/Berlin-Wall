@@ -1,2 +1,29 @@
+/* line 1, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+html {
+  height: 100%; }
+
+/* line 4, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+body {
+  background-color: #777;
+  height: 100%; }
+
+/* line 9, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+.container {
+  height: 100%;
+  width: 85%;
+  margin: 45% auto;
+  text-align: center; }
+
+/* line 16, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+#message {
+  text-align: center; }
+
+/* line 22, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+h1 {
+  color: white;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 4em; }
 
 /*# sourceMappingURL=style.css.map */
