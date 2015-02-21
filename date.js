@@ -12,9 +12,15 @@ var value = evaluate(day, month, year, base);
 var begin = evaluate(13, 8 ,1961, base);
 var end = evaluate(9, 11, 1989, base);
 
-var text;
-if (value < begin) text = "The Berlin Wall is down";
-else if (value > end) text = "The Berlin Wall is down";
-else text = "The Berlin Wall is up";
+var num;
+if (value < begin) num = 0;
+else if (value > end) text = num = 2;
+else text = num = 1;
 
-document.getElementById("message").innerHTML = <h1>text</h1>;
+var down = 
+["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est en baisse", "Берлинская стена упала"];
+
+var up =
+["The Berlin Wall is Up", "Die Berliner Mauer steht noch", "La mur de Berlin est en place", "Берлинская стена ещё является"];
+
+//document.getElementById("message").innerHTML = <h1>text</h1>;
