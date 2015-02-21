@@ -8,7 +8,7 @@ body {
   color: #444;
   font-family: 'Lato', sans-serif;
   max-height: 100%;
-  margin: 20% 0 60px 0; }
+  margin: 20% 0 100px 0; }
 
 /* line 14, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
 .container {
@@ -32,27 +32,35 @@ h1 {
 footer {
   width: 100%;
   height: 60px;
-  line-height: 55px;
   text-align: center;
   vertical-align: middle;
   position: absolute;
   left: 0;
   bottom: 0; }
 
-/* line 43, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+/* line 42, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+footer span {
+  font-size: 10px; }
+
+/* line 46, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+form {
+  margin: 0;
+  padding: 0; }
+
+/* line 51, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
 select {
-  margin: 50px;
+  margin-bottom: 0;
   background: transparent;
   color: #444;
   width: 150px;
   padding: 5px 35px 5px 5px;
-  font-size: 1.2em;
-  height: 34px;
+  font-size: 1em;
+  height: 37px;
   border: none; }
 
 /*target Internet Explorer 9 and Internet Explorer 10:*/
 @media screen and (min-width: 0\0) {
-  /* line 56, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
+  /* line 64, /Users/jessiealvarez/TreeHacks/Berlin-Wall/scss/style.scss */
   select {
     background: none;
     padding: 5px; }
