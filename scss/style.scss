@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #A6171B;
+    //background-color: #A6171B;
     background-image: url('../img/concrete_seamless.png');
     color: #444;
     font-family: 'Lato', sans-serif;
@@ -38,4 +38,23 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+select {
+    margin: 50px;
+    background: transparent;
+    color: #444;
+    width: 150px;
+    padding: 5px 35px 5px 5px;
+    font-size: 1.2em;
+    height: 34px;
+    border: none;
+}
+/*target Internet Explorer 9 and Internet Explorer 10:*/
+
+@media screen and (min-width: 0\0) {
+    select {
+        background: none;
+        padding: 5px;
+    }
 }
