@@ -17,24 +17,8 @@ if (value < begin) num = 0;
 else if (value > end) num = 2;
 else num = 1;
 
-var form = document.getElementById("language");
-var lang = form.options[form.selectedIndex].value;
-alert(lang);
-var language;
-switch(lang){
-	case "english":
-		language = 0;
-		break;
-	case "german":
-		language = 1;
-		break;
-	case "french":
-		language = 2;
-		break;
-	case "russian":
-		language = 3;
-		break;
-}
+var form = document.getElementById("language").children[0];
+var language = form.options[form.selectedIndex].value;
 
 var down = 
 ["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est tombé", "Берлинская стена упала"];
