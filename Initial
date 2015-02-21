@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 	<script>
 		var date = Date();
+		var day = date.getDay();
+		var month = date.getMonth();
+		var year = date.getFullYear();
+		console.log(day + " " + month + " " + year);
 	<\script>
 	<strong>The Berlin Wall is up.</strong>
