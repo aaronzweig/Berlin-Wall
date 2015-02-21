@@ -15,7 +15,7 @@ var end = evaluate(9, 11, 1989, base);
 var num;
 if (value < begin) num = 0;
 else if (value > end) text = num = 2;
-else text = num = 1;
+else num = 1;
 
 var language = 1;
 
