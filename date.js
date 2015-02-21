@@ -17,7 +17,7 @@ if (value < begin) num = 0;
 else if (value > end) num = 2;
 else num = 1;
 
-var language = 1;
+var language = 3;
 
 var down = 
 ["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est en baisse", "Берлинская стена упала"];
