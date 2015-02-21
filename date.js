@@ -19,6 +19,7 @@ else num = 1;
 
 var form = document.getElementById("language");
 var lang = form.options[form.selectedIndex].value;
+alert(lang);
 var language;
 switch(lang){
 	case "english":
@@ -36,10 +37,10 @@ switch(lang){
 }
 
 var down = 
-["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est en baisse", "Берлинская стена упала"];
+["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est tombé", "Берлинская стена упала"];
 
 var up =
-["The Berlin Wall is Up", "Die Berliner Mauer steht noch", "La mur de Berlin est en place", "Берлинская стена ещё является"];
+["The Berlin Wall is Up", "Die Berliner Mauer steht noch", "La mur de Berlin est en place", "Берлинская стена "];
 
 var text;
 if (num == 0 || num == 2) text = down[language];
