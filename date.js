@@ -18,6 +18,17 @@ if (value < begin) num = 0;
 else if (value > end) num = 2;
 else num = 1;
 
+$.get("http://www.npr.org/rss/rss.php?id=1008", function (data) {
+    $(data).find("entry").each(function () { // or "item" or whatever suits your feed
+        var el = $(this);
+
+        console.log("------------------------");
+        console.log("title      : " + el.find("title").text());
+        console.log("author     : " + el.find("author").text());
+        console.log("description: " + el.find("description").text());
+    });
+});
+
 var form = document.getElementById("language").children[0];
 var language = form.selectedIndex;
 
