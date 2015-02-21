@@ -18,6 +18,17 @@ if (value < begin) num = 0;
 else if (value > end) num = 2;
 else num = 1;
 
+$.get("https://www.google.com/alerts/feeds/14587743128001146677/12048650407741769120", function (data) {
+    $(data).find("id").each(function () { // or "item" or whatever suits your feed
+        var el = $(this);
+
+        console.log("------------------------");
+        console.log("title      : " + el.find("title").text());
+        console.log("author     : " + el.find("author").text());
+        console.log("description: " + el.find("description").text());
+    });
+});
+
 var form = document.getElementById("language").children[0];
 var language = form.selectedIndex;
 
