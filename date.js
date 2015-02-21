@@ -44,5 +44,6 @@ var up =
 var text;
 if (num == 0 || num == 2) text = down[language];
 else text = up[language];
+alert(text);
 document.getElementById("message").innerHTML = "<h1>" + text + "</h1>";
  
