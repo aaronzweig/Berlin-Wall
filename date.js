@@ -1,3 +1,4 @@
+var refresh = function(){
 var evaluate = function(d, m, y, b){
 	return b*b*y + b*m + d;
 }
@@ -30,4 +31,4 @@ var text;
 if (num == 0 || num == 2) text = down[language];
 else text = up[language];
 document.getElementById("message").innerHTML = "<h1>" + text + "</h1>";
- 
+}
