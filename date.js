@@ -19,15 +19,15 @@ var refresh = function () {
     else num = 1;
 
     $.get("http://www.npr.org/rss/rss.php?id=1004", function (data) {
-        $(data).find("item").each(function () { // or "item" or whatever suits your feed
-            var el = $(this);
+    $(data).find("item").each(function () { // or "item" or whatever suits your feed
+        var el = $(this);
 
-            console.log("------------------------");
-            console.log("title      : " + el.find("title").text());
-            console.log("author     : " + el.find("author").text());
-            console.log("description: " + el.find("description").text());
-        });
+        console.log("------------------------");
+        if (el.find("title").text().indexOf("Violent")) {
+        	console.log("violent")	
+        }
     });
+});
 
     var form = document.getElementById("language").children[0];
     var language = form.selectedIndex;
