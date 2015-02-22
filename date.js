@@ -37,10 +37,10 @@ var refresh = function () {
     var language = form.selectedIndex;
 
     var down = ["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est tombé", "Берлинская стена упала"];
-    console.log(num);
     var up = ["The Berlin Wall is Up", "Die Berliner Mauer steht noch", "La mur de Berlin est en place", "Берлинская стена стоит"];
 
     var text;
+        console.log(num);
     if (num == 0 || num == 2) text = down[language];
     else text = up[language];
     document.getElementById("message").innerHTML = "<h1>" + text + "</h1>";
