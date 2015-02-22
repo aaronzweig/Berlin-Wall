@@ -17,7 +17,7 @@ var refresh = function () {
     if (value < begin) num = 0;
     else if (value > end) num = 2;
     else num = 1;
-    if (num == 2) {
+    if (true) {
        $.get("http://www.npr.org/rss/rss.php?id=1004", function (data) {
             $(data).find("item").each(function () { // or "item" or whatever suits your feed
             var el = $(this);
