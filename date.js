@@ -23,8 +23,9 @@ var refresh = function () {
         var el = $(this);
 
         console.log("------------------------");
-        if (el.find("title").text().indexOf("Violent")) {
-        	console.log("violent")	
+        if (el.find("title").text().indexOf("Berlin Wall") != -1 && el.find("title").text().indexOf("Rebuilt") != -1 && el.find("title").text().indexOf("Anniversary") == -1) {
+        	console.log("oh no rebuilt")
+        	num =  1;
         }
     });
 });
