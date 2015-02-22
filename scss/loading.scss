@@ -1,0 +1,53 @@
+$font-color: #555;
+body {
+    padding-top: 5%;
+    background-color: #eee;
+}
+
+#loadingBar {
+    background-color: white;
+    margin: 0 auto;
+    width: 200px;
+    border: 3px solid $font-color;
+    height: 15px;
+}
+
+#progress {
+    background-color: tomato;
+    -webkit-animation: progress 5s;
+    animation: progress 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    height: 15px;
+}
+
+#content {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: $font-color;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+}
+
+@-webkit-keyframes progress {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+    97% {
+        width: 97%;
+    }
+    100% {
+        width: 0;
+    }
+}

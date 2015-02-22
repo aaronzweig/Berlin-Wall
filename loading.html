@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="scss/loading.css" />
+    <script>
+        window.onload = function (e) {
+            var textField = document.getElementById("results");
+            var progress = document.getElementById("progress");
+            var requestAnimationFrame = window.requestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.msRequestAnimationFrame;
+            requestAnimationFrame(updateValue);
+
+            function updateValue() {
+                var percentage = getComputedStyle(progress).width;
+                if (percentage == "200px") {
+                    textField.textContent = "Yes";
+                    progress.style.display = "none";
+                    document.getElementById("loadingBar").style.display = "none";
+                }
+                requestAnimationFrame(updateValue);
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Is Sisyphus happy?</h1>
+        <div id="loadingBar">
+            <div id="progress"></div>
+        </div>
+        <br/>
+        <h2 id="results"></h2>
+    </div>
+</body>
+
+</html>
