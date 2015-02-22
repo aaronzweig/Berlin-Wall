@@ -24,7 +24,7 @@ var refresh = function () {
 
             console.log("------------------------");
             //if (el.find("title").text().indexOf("Berlin Wall") != -1 && el.find("title").text().indexOf("Rebuilt") != -1 && el.find("title").text().indexOf("Anniversary") == -1) {
-            if (el.find("title").text().indexOf("Violent") != -1) {
+            if (el.find("title").text().indexOf("Ukraine") != -1) {
         	    console.log("oh no rebuilt");
         	    num =  1;
             }
