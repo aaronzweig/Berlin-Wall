@@ -18,10 +18,8 @@ var refresh = function () {
     else if (value > end) num = 2;
     else num = 1;
 
-
-
-    $.get("https://www.google.com/alerts/feeds/14587743128001146677/12048650407741769120", function (data) {
-        $(data).find("id").each(function () { // or "item" or whatever suits your feed
+    $.get("http://www.npr.org/rss/rss.php?id=1004", function (data) {
+        $(data).find("item").each(function () { // or "item" or whatever suits your feed
             var el = $(this);
 
             console.log("------------------------");
