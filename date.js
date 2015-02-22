@@ -17,9 +17,9 @@ var refresh = function () {
     if (value < begin) num = 0;
     else if (value > end) num = 2;
     else num = 1;
-
-    $.get("http://www.npr.org/rss/rss.php?id=1004", function (data) {
-    $(data).find("item").each(function () { // or "item" or whatever suits your feed
+    if (num == 2) {
+       $.get("http://www.npr.org/rss/rss.php?id=1004", function (data) {
+        $(data).find("item").each(function () { // or "item" or whatever suits your feed
         var el = $(this);
 
         console.log("------------------------");
@@ -28,7 +28,9 @@ var refresh = function () {
         	num =  1;
         }
     });
-});
+}); 
+    }
+    
 
     var form = document.getElementById("language").children[0];
     var language = form.selectedIndex;
