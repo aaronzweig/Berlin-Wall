@@ -20,18 +20,18 @@ var refresh = function () {
     if (true) {
        $.get("http://www.npr.org/rss/rss.php?id=1004", function (data) {
             $(data).find("item").each(function () { // or "item" or whatever suits your feed
-            var el = $(this);
-
-            console.log("------------------------");
-            //if (el.find("title").text().indexOf("Berlin Wall") != -1 && el.find("title").text().indexOf("Rebuilt") != -1 && el.find("title").text().indexOf("Anniversary") == -1) {
-            if (el.find("title").text().indexOf("Ukraine") != -1) {
-        	    console.log("oh no rebuilt");
-        	    num =  1;
-        	            console.log(num);
-
-            }
-        });
-    }); 
+                var el = $(this);
+    
+                console.log("------------------------");
+                //if (el.find("title").text().indexOf("Berlin Wall") != -1 && el.find("title").text().indexOf("Rebuilt") != -1 && el.find("title").text().indexOf("Anniversary") == -1) {
+                if (el.find("title").text().indexOf("Ukraine") != -1) {
+            	    console.log("oh no rebuilt");
+            	    num =  1;
+            	            console.log(num);
+    
+                }
+            });
+        }); 
     }
     
 
