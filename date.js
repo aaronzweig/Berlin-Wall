@@ -19,17 +19,17 @@ var refresh = function () {
     else num = 1;
     if (num == 2) {
        $.get("http://www.npr.org/rss/rss.php?id=1004", function (data) {
-        $(data).find("item").each(function () { // or "item" or whatever suits your feed
-        var el = $(this);
+            $(data).find("item").each(function () { // or "item" or whatever suits your feed
+            var el = $(this);
 
-        console.log("------------------------");
-        //if (el.find("title").text().indexOf("Berlin Wall") != -1 && el.find("title").text().indexOf("Rebuilt") != -1 && el.find("title").text().indexOf("Anniversary") == -1) {
-        if (el.find("title").text().indexOf("Violent") != -1) {
-        	console.log("oh no rebuilt")
-        	num =  1;
-        }
-    });
-}); 
+            console.log("------------------------");
+            //if (el.find("title").text().indexOf("Berlin Wall") != -1 && el.find("title").text().indexOf("Rebuilt") != -1 && el.find("title").text().indexOf("Anniversary") == -1) {
+            if (el.find("title").text().indexOf("Violent") != -1) {
+        	    console.log("oh no rebuilt");
+        	    num =  1;
+            }
+        });
+    }); 
     }
     
 
@@ -37,7 +37,7 @@ var refresh = function () {
     var language = form.selectedIndex;
 
     var down = ["The Berlin Wall is Down", "Die Berliner Mauer gefallen ist", "Le mur de Berlin est tombé", "Берлинская стена упала"];
-
+    console.log(num);
     var up = ["The Berlin Wall is Up", "Die Berliner Mauer steht noch", "La mur de Berlin est en place", "Берлинская стена стоит"];
 
     var text;
