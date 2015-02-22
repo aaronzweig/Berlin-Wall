@@ -27,6 +27,8 @@ var refresh = function () {
             if (el.find("title").text().indexOf("Ukraine") != -1) {
         	    console.log("oh no rebuilt");
         	    num =  1;
+        	            console.log(num);
+
             }
         });
     }); 
@@ -40,7 +42,6 @@ var refresh = function () {
     var up = ["The Berlin Wall is Up", "Die Berliner Mauer steht noch", "La mur de Berlin est en place", "Берлинская стена стоит"];
 
     var text;
-        console.log(num);
     if (num == 0 || num == 2) text = down[language];
     else text = up[language];
     document.getElementById("message").innerHTML = "<h1>" + text + "</h1>";
